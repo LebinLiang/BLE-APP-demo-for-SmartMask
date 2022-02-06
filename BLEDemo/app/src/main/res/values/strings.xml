@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">F-MASK</string>
+    <string name="connected_state">连接成功</string>
+    <string name="disconnected_state">连接失败</string>
+    <string name="future_mask_n">Future-Mask\n 未来-口罩</string>
+    <string name="title_activity_control_data">ControlDataActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

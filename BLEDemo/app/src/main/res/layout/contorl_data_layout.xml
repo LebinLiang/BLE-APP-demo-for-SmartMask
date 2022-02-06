@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/night_mode_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/manual_mode_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="NIGHT MODE\n夜间模式" />
+
+        <Button
+            android:id="@+id/manual_mode_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="MANUAL MODE\n手动模式" />
+
+        <Button
+            android:id="@+id/auto_mode_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/night_mode_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="Auto Mode \n自动模式" />
+
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="58dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="75dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:showText="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/auto_mode_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginStart="15dp"
+            android:singleLine="false"
+            android:text="MODE \n模式"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/auto_mode_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="299dp"
+            android:layout_marginStart="15dp"
+            android:singleLine="false"
+            android:text="DATA \n数据"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="83dp"
+            android:layout_height="88dp"
+            android:layout_alignBottom="@+id/auto_mode_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="253dp"
+            android:layout_marginStart="261dp"
+            android:singleLine="false"
+            android:text="Danger Index\n危险指数"
+            android:textColor="#D51010"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/danger_index"
+            android:layout_width="64dp"
+            android:layout_height="75dp"
+            android:layout_alignBottom="@+id/auto_mode_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="170dp"
+            android:layout_marginStart="266dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="5"
+            android:textColor="#F3F0F0"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/auto_mode_btn"
+            android:layout_marginBottom="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/textView7"
+            android:text="环境湿度:\n(Hum)" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:text="环境温度:\n(Tem)" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView9"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:text="CO2:" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:text="VOCs:" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView11"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:text="目标温度:\n(Target Tem)" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView12"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:text="口罩佩戴:\n(Mask)" />
+
+        <TextView
+            android:id="@+id/mask_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/target_tem"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/target_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginBottom="-38dp"
+            android:layout_marginStart="44dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/vocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/mask_count"
+            android:layout_marginBottom="-76dp"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/co2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/mask_count"
+            android:layout_marginBottom="-104dp"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/env_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/mask_count"
+            android:layout_marginBottom="-143dp"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/env_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/mask_count"
+            android:layout_marginBottom="-186dp"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/connect_state3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_toEndOf="@+id/manual_mode_btn" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-121dp"
+            android:layout_toEndOf="@+id/env_hum"
+            android:text="当前滤盒使用寿命：30小时" />
+
+    </RelativeLayout>
+</LinearLayout>
